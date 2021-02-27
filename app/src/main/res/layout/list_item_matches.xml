@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300sdp"
+    android:layout_margin="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/matchImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMatchName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="asdfasfsadf"
+        android:textColor="@color/cl_normal_text"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/rightGuideline"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/bottomGuideline" />
+
+    <TextView
+        android:id="@+id/tvMatchAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="28 Yrs, 5'5"
+        android:textColor="@color/cl_normal_text"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/tvMatchName" />
+
+    <TextView
+        android:id="@+id/tvMatchGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:text="* Software Engineer"
+        android:textColor="@color/cl_normal_text"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toStartOf="@id/rightGuideline"
+        app:layout_constraintStart_toEndOf="@id/tvMatchAge"
+        app:layout_constraintTop_toBottomOf="@id/tvMatchName" />
+
+    <TextView
+        android:id="@+id/tvMatchLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Software Engineer"
+        android:textColor="@color/cl_normal_text"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toStartOf="@id/rightGuideline"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/tvMatchAge" />
+
+    <Button
+        android:id="@+id/btnMatchAccept"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:backgroundTint="@color/cl_green"
+        android:text="@string/label_accept"
+        android:textColor="@color/cl_white"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toStartOf="@id/centerGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/footerGuideline" />
+
+    <Button
+        android:id="@+id/btnMatchReject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:backgroundTint="@color/cl_red"
+        android:text="@string/label_reject"
+        android:textColor="@color/cl_white"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/centerGuideline"
+        app:layout_constraintTop_toBottomOf="@id/footerGuideline" />
+
+    <TextView
+        android:id="@+id/tvStatusMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="laskjfklsjd"
+        android:gravity="center"
+        android:textColor="@color/cl_black"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/footerGuideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/_20sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/_20sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".62" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centerGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/footerGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/statusGroupBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="btnMatchAccept,btnMatchReject" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

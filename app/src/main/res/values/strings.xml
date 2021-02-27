@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shaadi Assignment</string>
+    <string name="label_accept">Accept</string>
+    <string name="label_reject">Reject</string>
+    <string name="msg_declined">Member Declined</string>
+    <string name="msg_accepted">Member Accepted</string>
+</resources>
